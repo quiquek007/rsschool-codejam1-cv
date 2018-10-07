@@ -21,7 +21,7 @@
     <ul>
       <li><a href="#">Main</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#">Contacts</a></li>
+      <li><a href="#contacts">Contacts</a></li>
     </ul>
   </nav>
 </header>
@@ -65,10 +65,34 @@
       </p>
     </div>
   </section>
+  <section class="faq">
+    <p class="title">Q: What do you want from the course of EPAM?</p>
+    <p class="answer">A: Definitely I want more knowledges about web-programing. It will help me to find a job.</p>
+    <p class="title">Q: Why do you want to do web programing?</p>
+    <p class="answer">A: I have convinced that I have good skills in a programing. For example,
+      when I studies in university there was a competition. The reward was practice in a company Ericpole.
+      At that time it was necessary to write a test on Java. And I had do my best so I won.
+    </p>
+    <p class="title">Q: Did you alone start programing?</p>
+    <p class="answer">A: No. With this helped me my friend. Earlier he was passing courses of EPAM himself,
+      and I decided to follow in his footsteps.
+    </p>
+    <p class="title">Q: Can you show some decision in your code?</p>
+    <p class="answer">A: Yes, of course. The task is next: it is necessary count number of all properties an object.
+      I searched the solution in the Internet, and there always talked: For this task you should pass of all properties
+      and count them. But it is very slow and write a lot. And I have found another solution, like this:
+    </p>
+    <pre>
+        const getDeepPropertiesCount = (obj) => {
+        let objString = JSON.stringify(obj).toString();
+        return objString.split(':').length - 1;
+        };
+    </pre>
+  </section>
 </main>
 <footer>
   <p class="title">Contacts:</p>
-  <div class="contacts">
+  <div class="contacts" id="contacts">
     <span><a href="tel:+375299399240"><i class="fa fa-mobile fa-lg"></i> +375 29 9399240 velcom</a></span>
     <span><a href="mailto:quiquek007@gmail.com"><i class="fa fa-envelope-o"></i> quiquek007@gmail.com</a></span>
     <span><a href="skype:live:5fc0f96c6758631"><i class="fa fa-skype"></i> live:5fc0f96c6758631</a></span>
