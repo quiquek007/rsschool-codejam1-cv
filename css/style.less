@@ -154,4 +154,63 @@ main {
   }
 }
 
+footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100px;
+  margin-top: -100px;
+  padding: 20px 20px 20px 20%;
+  background-color: #575757;
+  border-radius: 40px 0px;
 
+  > .title {
+    flex-direction: column;
+    align-self: center;
+    margin-left: 10%;
+    font-weight: bold;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: aliceblue;
+    .user-select(none);
+
+    &:hover {
+      color: orange;
+      transition: 0.3s all;
+    }
+
+    &:not(:hover) {
+      transition: 0.7s all;
+    }
+  }
+
+  > .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 70%;
+    margin-left: 10%;
+    color: aliceblue;
+
+    > span {
+      width: 50%;
+      padding: 0 10px;
+      text-align: left;
+      line-height: 1.5em;
+
+      > a {
+        color: #cafff7;
+        text-decoration: none;
+
+        &:hover {
+          color: blue;
+          transition: 0.3s all;
+        }
+
+        &:not(:hover) {
+          transition: 0.7s all;
+        }
+      }
+    }
+  }
+}
