@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Roboto Slab', 'Tahoma', sans-serif;
+  font-family: "Roboto Slab", "Tahoma", sans-serif;
   font-weight: normal;
 }
 
@@ -37,8 +37,8 @@ header {
   max-width: 400px;
   font-size: 18px;
   color: black;
-  .user-select(none);
   overflow: hidden;
+  .user-select(none);
 
   span {
     color: orange;
@@ -61,7 +61,7 @@ header {
     border-right: 1px solid gray;
 
     li {
-      width: calc(100% / 3);
+      width: 32%;
 
       a {
         display: inline-flex;
@@ -124,9 +124,9 @@ main {
   padding-bottom: 20px;
   font-size: 17px;
   text-align: left;
+  border-bottom: 1px solid black;
   overflow: hidden;
   cursor: default;
-  border-bottom: 1px solid black;
 
   div {
     width: 50%;
@@ -162,8 +162,8 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 20px;
   margin-top: 80px;
+  margin-bottom: 20px;
 
   &:before {
     content: '';
@@ -172,7 +172,7 @@ main {
     top: -60px;
     width: 150px;
     height: 150px;
-    background: url('../img/latest.png') no-repeat;
+    background: url("../img/latest.png") no-repeat;
     background-size: contain;
   }
 
@@ -183,7 +183,7 @@ main {
 
   pre {
     margin-top: 10px;
-    font-family: 'Courier New', Arial, serif;
+    font-family: "Courier New", "Arial", serif;
     text-align: left;
   }
 

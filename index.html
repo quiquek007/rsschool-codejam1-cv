@@ -19,8 +19,8 @@
   </div>
   <nav class="navigation">
     <ul>
-      <li><a href="#">Main</a></li>
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#faq">FAQ</a></li>
       <li><a href="#contacts">Contacts</a></li>
     </ul>
   </nav>
@@ -65,7 +65,7 @@
       </p>
     </div>
   </section>
-  <section class="faq">
+  <section class="faq" id="faq">
     <p class="title">Q: What do you want from the course of EPAM?</p>
     <p class="answer">A: Definitely I want more knowledges about web-programing. It will help me to find a job.</p>
     <p class="title">Q: Why do you want to do web programing?</p>
@@ -84,8 +84,8 @@
     </p>
     <pre>
         const getDeepPropertiesCount = (obj) => {
-        let objString = JSON.stringify(obj).toString();
-        return objString.split(':').length - 1;
+          let objString = JSON.stringify(obj).toString();
+          return objString.split(':').length - 1;
         };
     </pre>
   </section>

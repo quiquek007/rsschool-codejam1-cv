@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Roboto Slab', 'Tahoma', sans-serif;
+  font-family: "Roboto Slab", "Tahoma", sans-serif;
   font-weight: normal;
 }
 html {
@@ -26,11 +26,11 @@ header {
   max-width: 400px;
   font-size: 18px;
   color: black;
+  overflow: hidden;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  overflow: hidden;
 }
 .name-and-position span {
   color: orange;
@@ -50,7 +50,7 @@ header {
   border-right: 1px solid gray;
 }
 .navigation ul li {
-  width: calc(100% / 3);
+  width: 32%;
 }
 .navigation ul li a {
   display: inline-flex;
@@ -106,9 +106,9 @@ main {
   padding-bottom: 20px;
   font-size: 17px;
   text-align: left;
+  border-bottom: 1px solid black;
   overflow: hidden;
   cursor: default;
-  border-bottom: 1px solid black;
 }
 .aboutme-and-skills div {
   width: 50%;
@@ -141,8 +141,8 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 20px;
   margin-top: 80px;
+  margin-bottom: 20px;
 }
 .faq:before {
   content: '';
@@ -151,7 +151,7 @@ main {
   top: -60px;
   width: 150px;
   height: 150px;
-  background: url('../img/latest.png') no-repeat;
+  background: url("../img/latest.png") no-repeat;
   background-size: contain;
 }
 .faq p {
@@ -160,7 +160,7 @@ main {
 }
 .faq pre {
   margin-top: 10px;
-  font-family: 'Courier New', Arial, serif;
+  font-family: "Courier New", "Arial", serif;
   text-align: left;
 }
 .faq > .title {
