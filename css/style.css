@@ -4,9 +4,11 @@
   font-weight: normal;
 }
 html {
+  height: 100%;
   background-color: aliceblue;
 }
 body {
+  height: 100%;
   margin: 0 auto;
   max-width: 1024px;
   text-align: center;
@@ -66,5 +68,69 @@ header {
 }
 .navigation ul li a:not(:hover) {
   transition: 0.7s all;
+}
+main {
+  min-height: calc(100% - 120px);
+  padding-bottom: 100px;
+}
+.title-and-photo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 175px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid black;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.title-and-photo span {
+  font-weight: bold;
+  font-size: 30px;
+}
+.title-and-photo img {
+  height: 100%;
+  width: auto;
+  max-height: 175px;
+  border-radius: 20px;
+}
+.aboutme-and-skills {
+  display: flex;
+  flex-direction: row;
+  max-height: 350px;
+  margin-top: 35px;
+  font-size: 17px;
+  text-align: left;
+  overflow: hidden;
+  cursor: default;
+}
+.aboutme-and-skills div {
+  width: 50%;
+  padding: 0 20px;
+}
+.aboutme-and-skills .title {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  color: #575757;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.aboutme-and-skills .text {
+  margin: 20px 0;
+  line-height: 1.2em;
+}
+.aboutme-and-skills .skills {
+  line-height: 1.4em;
+  text-transform: capitalize;
+  list-style: square;
+}
+.aboutme-and-skills .skills li:hover {
+  list-style: circle;
 }
 /*# sourceMappingURL=style.css.map */
