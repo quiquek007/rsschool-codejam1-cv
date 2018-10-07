@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: "Roboto Slab", "Tahoma", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: normal;
 }
 html {
@@ -103,7 +103,7 @@ main {
   max-height: 400px;
   margin-top: 35px;
   margin-bottom: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 430px;
   text-align: left;
   font-size: 17px;
   border-bottom: 1px solid black;
@@ -115,10 +115,12 @@ main {
   padding: 0 20px;
 }
 .aboutme-and-skills .title {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: bold;
+  letter-spacing: 1.1px;
   text-align: center;
-  color: #575757;
+  text-transform: uppercase;
+  color: forestgreen;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -128,27 +130,43 @@ main {
   margin: 20px 0;
   line-height: 1.2em;
 }
+.aboutme-and-skills .text.italic {
+  font-style: italic;
+  line-height: 1.5;
+}
 .aboutme-and-skills .skills {
   line-height: 1.4em;
   text-transform: capitalize;
-  list-style: square;
 }
-.aboutme-and-skills .skills li:hover {
-  list-style: circle;
+.aboutme-and-skills .skills li {
+  position: relative;
+  padding-left: 30px;
+  line-height: 1.6;
+}
+.aboutme-and-skills .skills li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 20px;
+  height: 20px;
+  background: url("../img/confirm.svg") no-repeat;
+  background-size: contain;
 }
 .faq {
   position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 80px;
+  margin-top: 115px;
   margin-bottom: 20px;
 }
 .faq:before {
   content: "";
   position: absolute;
   left: calc((100% / 2) - 75px);
-  top: -60px;
+  top: -90px;
   width: 150px;
   height: 150px;
   background: url("../img/latest.png") no-repeat;
@@ -161,15 +179,22 @@ main {
 .faq pre {
   margin-top: 10px;
   font-family: "Courier New", "Arial", serif;
+  font-size: 18px;
   text-align: left;
 }
 .faq > .title {
   margin-top: 15px;
+  font-size: 20px;
+  font-weight: 600;
   color: forestgreen;
 }
 .faq > .answer {
   margin-top: 8px;
-  padding-left: 20px;
+  margin-bottom: 15px;
+  padding-left: 30px;
+  font-size: 16px;
+  font-style: italic;
+  letter-spacing: 1.2px;
 }
 footer {
   display: flex;
@@ -194,13 +219,6 @@ footer > .title {
   -ms-user-select: none;
   user-select: none;
 }
-footer > .title:hover {
-  color: orange;
-  transition: 0.3s all;
-}
-footer > .title:not(:hover) {
-  transition: 0.7s all;
-}
 footer > .contacts {
   display: flex;
   flex-wrap: wrap;
@@ -220,7 +238,7 @@ footer > .contacts > span > a {
   text-decoration: none;
 }
 footer > .contacts > span > a:hover {
-  color: blue;
+  color: orange;
   transition: 0.3s all;
 }
 footer > .contacts > span > a:not(:hover) {
